@@ -226,6 +226,7 @@ html{
 .skills .fila .col .contenedor-skills{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .skills .fila .col .skill{
@@ -532,17 +533,26 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+
+    .formacion .col{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
 }
 @media screen and (max-width:700px){
     .sobremi .fila{
         display: block;
     }
     .sobremi .fila .col{
-        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .skills .fila{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .skills .fila .col{
         width: 100%;
